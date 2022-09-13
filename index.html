@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nathan Kwon</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script src="js/trianglify.min.js"></script>
+	<script src="encom-globe.min.js"></script>
+	<script src="grid.js"></script>
+	<script src="data.js"></script>
+	<script src="js/project_data.js"></script>
+
+	<!-- Scrollbar -->
+	<link rel="stylesheet" href="css/perfect-scrollbar.css">
+	<script src="js/perfect-scrollbar.min.js" type="text/javascript"></script>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+
+	<!-- Custom fonts for this template -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+	<style>
+		/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  padding-top: 60px; /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		
+		/* Modal Content */
+		.modal-content {
+		  position: relative;
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 0;
+		  border: 1px solid #888;
+		  width: 80%;
+		  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		  -webkit-animation-name: animatetop;
+		  -webkit-animation-duration: 0.4s;
+		  animation-name: animatetop;
+		  animation-duration: 0.4s
+		}
+		
+		/* Add Animation */
+		@-webkit-keyframes animatetop {
+		  from {top:-300px; opacity:0} 
+		  to {top:0; opacity:1}
+		}
+		
+		@keyframes animatetop {
+		  from {top:-300px; opacity:0}
+		  to {top:0; opacity:1}
+		}
+		
+		/* The Close Button */
+		.close {
+		  color: white;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+		
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		
+		.modal-header {
+		  padding: 2px 16px;
+		  background-color: white;
+		  color: white;
+		}
+		
+		.modal-body {padding: 2px 16px;}
+		
+		.modal-footer {
+		  padding: 2px 16px;
+		  background-color: white;
+		  color: white;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h1 id="intro">{ }</h1>
+	<div id="main">
+		<h2 style="font-size: 1.5rem" id="hi">Hi, I'm an <span id="age"></span> year-old Computer Science</h2>
+		<!-- <h2 style="font-size: 1.5rem" lang="kr">안녕하새요, 저는 <span id="age"> </span> 살 컴퓨터 Science</h2> -->
+		<h2 style="font-size: 1.5rem">student at the University of Waterloo with interests in:</h2>
+
+		  <section class="page-section" id="about">
+			<div class="container">
+			  <div class="row text-center">
+				<div class="col-md-4">
+					<span class="fa-stack fa-4x">
+					  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+					  <i class="fas fa-first-aid fa-stack-1x fa-inverse"></i>
+					</span>
+					<h4 class="service-heading">First Aid</h4>
+				  </a>
+				</div>
+				<div class="col-md-4">
+					<span class="fa-stack fa-4x">
+					  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+					  <i class="fas fa-language fa-stack-1x fa-inverse"></i>
+					</span>
+					<h4 class="service-heading">World Languages</h4>
+				  </a>
+				</div>
+				<div class="col-md-4">
+				<a style = "color: white" href="https://www.youtube.com/watch?v=e0axWlTGtug" target="_blank">
+				  <span class="fa-stack fa-4x">
+					<i class="fas fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-music fa-stack-1x fa-inverse"></i>
+				  </span>
+				  <h4 class="service-heading">Music</h4>
+				</a>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<h2>I use
+			<span style="color:#90c53f;" data-panel="nodejs">Python<span 
+					style="background-color:#90c53f;"></span></span>,
+			<span style="color: #5ec9f8;" data-panel="flutter">Java<span
+					style="background-color:#5ec9f8;"></span></span>,
+			<span style="color: #f16529;" data-panel="htmlcss">HTML/CSS/JS<span
+					style="background-color:#f16529;"></span></span>, 
+			<span style="color: #1BDABA;" data-panel="others">Scheme<span
+					style="background-color:#ffdd48;"></span></span>,
+			<span style="color: #1B60DA;" data-panel="others">C<span
+					style="background-color:#ffdd48;"></span></span>, and
+			<span style="color: #ffdd48;" data-panel="others">C++<span 
+					style="background-color:#ffdd48;"></span></span>.
+		</h2>
+		<h2 style="padding-top: 10px;"> Here are some <button id="myBtn">Projects and Experiences</button> of mine.</h2>
+
+		<div id="details">
+			<h2>Check out my <a href="https://github.com/nathan-dot" class="d" target="_blank"
+					style="color:#949494;">GitHub<span class="underline" style="background-color:#949494;"></span></a>
+				or <a href="resume.pdf" class="d" target="_blank" style="color:#949494;">Resume<span class="underline"
+						style="background-color:#949494;"></span></a>.</h2>
+			<br>
+		</div>
+	</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <div class="modal-header">
+		<span class="close">&times;</span>
+	  </div>
+	  <div class="modal-body">
+		<div class="container">
+			<div class="row">
+			  <div class="col-lg-12 text-center" style="color: #000;">
+				<h2 class="section-heading text-uppercase">Projects & Experiences</h2>
+				Some projects I've worked on and some programming experiences I consider invaluable!
+			  </div>
+			</div>
+	  
+	  <main class="main-area">
+	  
+		<div class="centered">
+	  
+			<div class="cards">
+
+			  <article class="card">
+				<a href="https://github.com/Nathan-dot/sudokuSolver" target="_blank">
+				  <picture class="thumbnail">
+					<img src="img/sudokuSolver.png" alt="SudokuAI" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					  <h2>SudokuAI - 2022</h2>
+					  <ul>
+						<li>Researched and created a sudokuAI in Java that achieves sudoku solutions under 1 second</li>
+						<li>Implemented using a Depth First Search algorithm and a variation of Donald Knuth's Algorithm X and Dancing Links Algorithm</li>
+						<li>Constructs possibility matrices and doubly-linked lists to maximize program's solving speed</li>
+						<li>Used Git for Version Control</li>
+					  </ul>
+				  </div><!-- .card-content -->
+			  </article><!-- .card -->
+	  
+			  <article class="card">
+				<a href="" target="_blank">
+				  <picture class="thumbnail">
+						<img src="img/TetrisGame.png" alt="TetrisClone" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					  <h2>TetrisClone - 2022</h2>
+					  <ul>
+						<li>Created a fully-functioning single-player tetris game</li>
+						<li>Used object-oriented programming as well as multiple design patterns in Python</li>
+						<li>Can evaluate moves and assign them scores based on heuristics like height of columns, complete lines, holes, and bumpiness </li>
+						<li>Code is available upon request</li>
+						<li>Used Git for Version Control</li>
+						<li>Next Steps: Apply a genetic algorithm to create a Tetris AI that can be toggled on and off by the player</li>
+					  </ul>
+				  </div><!-- .card-content -->
+			  </article><!-- .card -->
+
+
+			  <article class="card">
+				<a href="https://www.firstinspires.org/robotics/frc" target="_blank">
+				<picture class="thumbnail">
+					<img src="img/frc.png" alt="First Robotics Competition" class="card-img">
+				</picture>
+				<div class="card-content">
+					<h2> First Robotics Competition: 2019 - 2021</h2>
+					<ul>
+					  <li>Used TensorFlow, Java, and Telemetry data to build programs for our team's robot to move autonomously and via remote-control</li>
+					  <li>Received the "Inspire Award" for the best-implemented robot and was chosen to represent B.C. out of 200 teams at Worlds</li>
+					  <li>Nurtured team's growth into 3 separate teams and 40 members</li>
+					  <li>Facilitated healthy learning environment for new coders and met with team sponsors</li>
+					  <li>Developed clear and effective communication skills through working as a team and teaching others</li>
+					</ul>
+				</div><!-- .card-content -->
+			  </a>
+			</article><!-- .card -->
+
+	  
+	  
+			  <article class="card">
+				  <picture class="thumbnail">
+					  <img src="img/wordle.png" alt="Wordle Clone" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					  <h2>Wordle Clone - 2022</h2>
+					  <ul>
+						<li>Designed a Wordle Clone in C as part of an assignment for my CS 136 class</li>
+						<li>Code is unavailable for viewing</li>
+					  </ul>
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+	  
+			  <article class="card">
+					<a href="" target="_blank">
+				  <picture class="thumbnail">
+						<img src="img/myWebsite.png" alt="MyWebsite" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					  <h2>This Website!</h2>
+					  <ul>
+						<li>You're looking at it!</li>
+						  <li>Made with HTML, CSS, JavaScript, BootStrap, and JQuery</li>
+						  <li>Using Git for Version Control</li>
+					  </ul>
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+	  
+			  <article class="card">
+				<a href="https://devpost.com/software/project-sw70dtyukc2m" target="_blank">
+				  <picture class="thumbnail">
+					<img src="img/looseleaf.png" alt="Loose-Leaf Tunes Website" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					<h2>LooseLeafTunes  -  Hack The North 2021</h2>
+					<ul>
+					  <li>Designed a full-stack web application with the Microsoft Azure API that analyzes user-inputs to compose music according to the text's 
+						tone</li>
+						<li>Built using HTML, CSS, JavaScript, JQuery, and Bootstrap</li>
+					  <li>Worked as part of a 4-person team and presented at Hack The North</li>
+					</ul>
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+	  
+			  <article class="card">
+				<a href="https://github.com/Nathan-dot/globe-trotter" target="_blank">
+				  <picture class="thumbnail">
+					<img src="img/globe.png" alt="Three.js Globe" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					<h2>Custom Globe Model - 2022</h2>
+					<ul>
+					  <li>Created an animated, interactive 3D globe with custom shaders in Blender and Three.js</li>
+					  <li>Deployed via Vite.js</li>
+					  <li>Used Git for Version Control</li>
+					</ul>
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+	  
+			  <article class="card">
+				  <a href="https://spcs.stanford.edu/courses/artificial-intelligence" target="_blank">
+				  <div class="card-content">
+					  <h2>AI, Stanford Pre-Collegiate Studies 2020</h2>
+					  <ul>
+						<li>1-month introductory artifical intelligence course offered by Stanford University</li>
+						<li>Used Python, Google TensorFlow, and Keras to implement deep learning, resulting in a final project predicting COVID-19 trends</li>
+					  </ul>
+	  
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+	  
+			  <article class="card">
+				  <a href="https://dakadabra.shinyapps.io/shiny_arules/" target="_blank">
+				  <picture class="thumbnail">
+					  <img src="img/ccc.jpeg" alt="Waterloo CCC competition" class="card-img">
+				  </picture>
+				  <div class="card-content">
+					  <h2>Canadian Computing Competition: 2017 - 2020</h2>
+					  <ul>
+						<li>Earned Certificates of Distinction for placing in the top 25% of the Junior and Senior competitions</li>
+						<li>Coded in C, Java, and Python</li>
+					  </ul>
+				  </div><!-- .card-content -->
+				</a>
+			  </article><!-- .card -->
+	  
+			</section><!-- .cards -->
+	  
+		</div><!-- .centered -->
+	  
+	  </main>
+	  
+	  </section>
+	  </div>
+	</div>
+	<div class = "modal-footer section-heading text-uppercase" style = "color: #000">
+		<h8 class> Website Inspired by @Ottomated </h8>
+	</div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+	modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+	modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+	if (event.target == modal) {
+	  modal.style.display = "none";
+	}
+  }
+  </script>
+
+	    <!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+		<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript" src="js/intro.js"></script>
+	<script type="text/javascript" src="js/age.js"></script>
+	<script type="text/javascript" src="js/freelancer.js"></script>
+</body>
+</html>
